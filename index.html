@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image:url(ryancha.jpg);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .login-logo{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 150px;
+            height:120px;
+            margin:0 auto 24px auto;
+            width:120px;
+            object-fit: cover;
+            border-radius:100%;
+        }
+         .login-container {
+            background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 16px 40px rgba(0,0,0,0.25);
+            width: 100%;
+            max-width: 360px;
+            backdrop-filter:blur(10px);
+        }
+        .login-container h1 {
+            margin: 0 0 1.5rem;
+            font-size: 1.75rem;
+            text-align:center;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            color: #9c4747;
+            font-size: 1rem;
+        }
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            border-color: #12af27;
+            box-shadow: 0 0 0 3px rgba(164,192,255,0.18);
+            background: rgba(40, 43, 180, 0.15);
+        }
+        .actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        .actions a {
+            color: #dce6ff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .actions a:hover {
+            text-decoration: underline;
+        }
+        button {
+            width: 100%;
+            padding: 0.95rem 1rem;
+            border: none;
+            border-radius: 8px;
+            background: #6c8cff;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+        button:hover {
+            background: #5a74da;
+        }
+        .note {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.75);
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!--login placed at the top of the form-->
+        <img src="download (1).jpg"alt="Company Logo"class="login-logo">
+        <h1>🔓SIGN IN</h1>
+        <form id="loginForm" action="#" method="post">
+            <div class="form-group">
+                <label for="email">📧Email</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">🔑Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="actions">
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="note">New here? <a href="#">Create an account</a></p>
+        <footer>
+            <p style="color:rgb(88, 77, 77);">&copy2026  | mobiile friendly made website.</p>
+        </footer>
+    </div>
+    <script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  window.location.href = "dashboard.html";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard setup</title>
+    <link rel="stylesheet"href="style.css">
+    <style>
+        body{
+            margin:0;
+            padding:10px;
+            background:lightblue;
+            align-items:center;
+            border-radius:30px;
+        }
+        nav{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 20px;
+  background:white;
+  box-shadow:0 3px 11px rgba(0,0,0,0.1);
+  position:sticky;
+  top:0;
+}
+header{
+  text-align:center;
+  padding:62px 22px;
+  background:linear-gradient(135deg,#667eea,#7b4ba2);
+  color:white;
+}
+.card{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  padding:40px 20px;
+  max-width:1000px;
+  margin:0 auto 20px;
+}
+.card:hover{transform:translateY(-5px);}
+/*contact*/
+.contact{
+  max-width:500px;
+  margin:40px auto;
+  padding:0 20px;
+}
+input,textarea{
+  width:100%;
+  padding:12px;
+  margin:8px 0;
+  border:1px solid#ddd;
+  border-radius:8px;
+  font-size:16px;
+}
+textarea{height:100px;}
+/*Buttons*/
+button{
+  background:#1db954;
+  color:blue;
+  border:none;
+  padding:12px 24px;
+  border-radius:50px;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+  margin-top:10px;
+}
+button:hover{transform:scale(1.05);background:#1b9c46;}
+#themeBtn{background:#333;padding:8px 15px;}
+#colorBtn{background:dodgerblue;color:#667eea;}
+        footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="dashboard-container">
+            <a href="#">HOME</a>
+<a href="#">HELP</a>
+<a href="#">SUPPORT</a>
+<a href="#">About Us</a>
+<a href="#">PRIVACY </a> 
+<a href="#"></a>
+        </div>
+    </nav>
+    <header>
+        <h2>WELCOME WE OFFER FULL SERVICES.</h2>
+        <div class="card">
+            <h3 style="text-decoration:underline wavy red;">PROJECTS.</h3>
+            <img src="profile.jpg"alt="my photo"weight="100"height="100">
+            <p>We intend to ptomote creation activities<br>And make kenya a cheap place for development.</p>
+            <div class="card">
+                <h3 style="text-decoration:underline wavy red;">SKILLS.</h3>
+                <img src="skills.jpg"alt="my photo"weight="100"height="100">
+                <p>&bullet;Skilled in HTML,CSS & JAVASCRIPT.<br>ALso non-skilled personal is not demoralised.<br>We offer the necessary training to the personell.</p>
+            </div>
+            <div class="card">
+                <h3 style="text-decoration:underline wavy red;">CONTACT US.</h3>
+                <img src="contact.jpg"alt="my photo"weight="300"height="100">
+                                <ul>
+                    <li><a href="@">info.@gmail.com</a>For more  infomation about us.</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <form id="ProceedForm" action="#" method="post"></form>
+    <form id="proceedForm">
+    <input type="text" id="name" placeholder="Enter name to continue..." required>
+    <input type="email" id="email" placeholder="Enter Email to continue..." required>
+    <button type="submit">PROCEED</button>
+</form>
+
+<script>
+document.getElementById("proceedForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    window.location.href = "prieview.html";
+});
+</script>
+    <footer>
+        <!--telegran button-->
+        <a href="https://t.me/Boizychacha"target="_blank">
+            <img src="telegram.jpg"alt="telegram"class="social-icon">
+        </a>
+        <!--whatsapp button-->
+ <a href="https://wa.me/254726902574"target="_blank">
+            <img src="whatsapp.jpg"alt="whatsapp"class="social-icon">
+            </a>
+             <a href="https://facebook.com/chacha boizy fx"target="_blank">
+            <img src="facebook.png"alt="facebook"class="social-icon">
+            </a>
+    </footer>
+</body>
+</html>

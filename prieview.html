@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>END PRODUCT</title>
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h2{
+    color:#38bdf8;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+.sidebar ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    width:100%;
+    height:100%;
+}
+
+.sidebar ul li:hover{
+    background:#1e293b;
+}
+html{
+    scroll-behavior:smooth;
+}
+.main{
+    flex:1;
+    padding:20px;
+}
+
+.header{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.profile img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:25px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#2563eb;
+}
+
+.section{
+    background:white;
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+table th{
+    background:#2563eb;
+    color:white;
+}
+
+textarea{
+    width:100%;
+    height:120px;
+    margin-top:10px;
+    padding:10px;
+}
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    margin-top:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+.news{
+    padding:12px;
+    background:#eff6ff;
+    border-left:5px solid #2563eb;
+    margin-top:10px;
+}
+</style>
+</head>
+<body>
+    <div class="page">
+        <h1><u>WELCOME TO MY WEBSITE PREVIEW.</u></h1>
+        <ul>
+            <li>We support each other to make kenya a better place</li>
+            <li>Also we improve someones skills  in the field of <u>💻🖥SOFTWARE ENGINEERING</u></li>
+        </ul>
+    </div>
+    <div class="container">
+
+<div class="sidebar">
+<h2 class="logo">School Portal</h2>
+<ul>
+<li><a href="#dashboard">🏠 Dashboard</a></li>
+<li><a href="#results">📚 Results</a></li>
+<li><a href="#reviews">📝 Reviews</a></li>
+<li><a href="#announcements">📢 Announcements</a></li>
+<li><a href="#events">📅 Events</a></li>
+<li><a href="#profile">👤 Profile</a></li>
+<li><a href="#attendance">📊 Attendance</a></li>
+<li><a href="#settings">⚙ Settings</a></li>
+<li><a href="#logout">🚪 Logout</a></li>
+</ul>
+</div>
+
+<div class="main">
+
+<div class="header">
+<div>
+<h2>Welcome, Student</h2>
+<p>School Management Dashboard</p>
+</div>
+
+<div class="profile"id="Results">
+<img src="https://via.placeholder.com/100" id="preview">
+<input type="file" id="upload">
+</div>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Average Grade</h3>
+<h1>A</h1>
+</div>
+
+<div class="card">
+<h3>Attendance</h3>
+<h1>95%</h1>
+</div>
+
+<div class="card">
+<h3>Subjects</h3>
+<h1>12</h1>
+</div>
+
+<div class="card">
+<h3>Notifications</h3>
+<h1>7</h1>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Exam Results</h2>
+
+<table>
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Mathematics</td>
+<td>87</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>English</td>
+<td>78</td>
+<td>B+</td>
+</tr>
+
+<tr>
+<td>Physics</td>
+<td>91</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Computer Studies</td>
+<td>96</td>
+<td>A+</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>School Announcements</h2>
+
+<div class="news">
+Inter-school sports competition begins next Friday.
+</div>
+
+<div class="news">
+End-term examinations start on 15th August.
+</div>
+
+<div class="news">
+New library books have arrived.
+</div>
+
+</div>
+
+<div class="section">
+<h2>Write a Review</h2>
+
+<textarea placeholder="Write your review about the school..."></textarea>
+
+<br>
+<button>Submit Review</button>
+
+</div>
+
+</div>
+
+</div>
+<script>
+document.getElementById("upload").addEventListener("change", function(){
+const file=this.files[0];
+
+if(file){
+const reader=new FileReader();
+
+reader.onload=function(e){
+document.getElementById("preview").src=e.target.result;
+};
+
+reader.readAsDataURL(file);
+}
+});
+</script>
+</body>
+</html>
